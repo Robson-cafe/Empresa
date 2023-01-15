@@ -13,6 +13,17 @@ public class Empregado {
   private static String nome;
   private static Double sallarioMensal;
   
+  public Empregado (String novoNome, double saldo) {
+    nome = novoNome;
+    if(saldo >= 0) {
+      sallarioMensal = saldo;
+    } 
+    else {
+      sallarioMensal = 0.0;
+    }
+  }
+  
+  
   public static void setNome (String novoNome) {
     nome = novoNome;
   }       
