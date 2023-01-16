@@ -18,23 +18,34 @@ public class Empresa {
    */
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.println("Entre com nome do empregado:");
+    /*System.out.println("Entre com nome do empregado:");
     String nomeEmpregado = input.nextLine();
     
     System.out.println("Entre com sobrenome do empregado:");
     String sobreNomeEmpregado = input.nextLine();
     
     System.out.println("Entre com o salário do empregado:");
-    double salario = input.nextDouble();
+    double salario = input.nextDouble();*/
     
-    Empregado minhaConta = new Empregado(nomeEmpregado, sobreNomeEmpregado, salario);
-  
-    //minhaConta.setNome(nomeDaConta);
-    //minhaConta.setSaldo(1200.56);
+    //Empregado empregado = new Empregado(nomeEmpregado, sobreNomeEmpregado, salario);
+    Empregado empregado = new Empregado();
+    Empregado empregado2 = new Empregado();
     
-    System.out.printf("Nome ddo empregado: %s%n!", minhaConta.getNome());
-    System.out.printf("Sobre nome do empregado: %s%n!", minhaConta.getSobreNome());
-    System.out.printf("Salario do empregado %s %s: R$%.2f%n!", minhaConta.getNome(), minhaConta.getSobreNome(), minhaConta.getSalario());
+    empregado.setNome("Ze");
+    empregado.setSobreNome("Silva");
+    empregado.setSalario(1200.56);
+    
+    System.out.printf("Nome do empregado 1: %s%n!", empregado.getNome());
+    System.out.printf("Sobre nome do empregado 1: %s%n!", empregado.getSobreNome());
+    System.out.printf("Salario do empregado 1 %s %s: R$%.2f%n%n!", empregado.getNome(), empregado.getSobreNome(), empregado.getSalario());
+    
+    empregado2.setNome("Saulo");
+    empregado2.setSobreNome("Ze");
+    empregado2.setSalario(1604.56);
+    
+    System.out.printf("Nome do empregado 2: %s%n!", empregado2.getNome());
+    System.out.printf("Sobre nome do empregado 2: %s%n!", empregado2.getSobreNome());
+    System.out.printf("Salario do empregado 2 %s %s: R$%.2f%n!", empregado2.getNome(), empregado2.getSobreNome(), empregado2.getSalario());
   }
   
 }

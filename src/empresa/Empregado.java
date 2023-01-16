@@ -14,8 +14,8 @@ public class Empregado {
   private static String sobreNome;
   private static Double salarioMensal;
   
-  public Empregado (String novoNome, String novoSobreNome, Double salario) {
-    nome = novoNome;
+  //public Empregado (/*String novoNome, String novoSobreNome, Double salario*/) {
+    /*nome = novoNome;
     
     sobreNome = novoSobreNome;
     
@@ -25,7 +25,7 @@ public class Empregado {
     else {
       salarioMensal = 0.0;
     }
-  }
+  }*/
   
   public static void setNome (String novoNome) {
     nome = novoNome;
