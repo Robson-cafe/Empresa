@@ -17,18 +17,24 @@ public class Empresa {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    System.out.println("Entre com nome do cliente:");
     Scanner input = new Scanner(System.in);
-    String nomeDaConta = input.nextLine();
-    System.out.println("Entre com saldo cliente:");
-    double saldo = input.nextDouble();
-    Empregado minhaConta = new Empregado(nomeDaConta, saldo);
+    System.out.println("Entre com nome do empregado:");
+    String nomeEmpregado = input.nextLine();
+    
+    System.out.println("Entre com sobrenome do empregado:");
+    String sobreNomeEmpregado = input.nextLine();
+    
+    System.out.println("Entre com o salário do empregado:");
+    double salario = input.nextDouble();
+    
+    Empregado minhaConta = new Empregado(nomeEmpregado, sobreNomeEmpregado, salario);
   
     //minhaConta.setNome(nomeDaConta);
     //minhaConta.setSaldo(1200.56);
     
-    System.out.printf("Nome da conta: %s%n!", minhaConta.getNome());
-    System.out.printf("Saldo da conta: %f%n!", minhaConta.getSaldo());
+    System.out.printf("Nome ddo empregado: %s%n!", minhaConta.getNome());
+    System.out.printf("Sobre nome do empregado: %s%n!", minhaConta.getSobreNome());
+    System.out.printf("Salario do empregado %s %s: R$%.2f%n!", minhaConta.getNome(), minhaConta.getSobreNome(), minhaConta.getSalario());
   }
   
 }
