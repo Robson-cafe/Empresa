@@ -37,7 +37,7 @@ public class Empresa {
     
     System.out.printf("Nome do empregado 1: %s%n!", empregado.getNome());
     System.out.printf("Sobre nome do empregado 1: %s%n!", empregado.getSobreNome());
-    System.out.printf("Salario do empregado 1 %s %s: R$%.2f%n%n!", empregado.getNome(), empregado.getSobreNome(), empregado.getSalario());
+    System.out.printf("Salario do empregado 2 %s %s: R$%.2f%n%n!", empregado.getNome(), empregado.getSobreNome(), empregado.getSalario());
     
     empregado2.setNome("Saulo Araujo");
     empregado2.setSobreNome("Ze");
