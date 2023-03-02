@@ -35,8 +35,8 @@ public class Empregado {
     return nome;
   }
   
-  public static void setSobreNome (String novosobreNome) {
-    sobreNome = novosobreNome;
+  public static void setSobreNome (String novosobreNome2) {
+    sobreNome = novosobreNome2;
   }       
 
   public static String getSobreNome () {
@@ -47,8 +47,8 @@ public class Empregado {
     return salarioMensal;
   }
   
-  public static void setSalario (double salario) {
-    salarioMensal = salario;
+  public static void setSalario (double salario2) {
+    salarioMensal = salario2;
   }
 }
 
